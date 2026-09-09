@@ -4,7 +4,6 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-
 import com.example.bloomapp.ui.home.HomeScreen
 import com.example.bloomapp.ui.onboarding.OnboardingScreen
 
@@ -16,7 +15,8 @@ sealed class Screen(val route: String) {
 @Composable
 fun NavGraph(
     navController: NavHostController,
-    startDestination: String
+    // Set default startDestination to Onboarding
+    startDestination: String = Screen.Onboarding.route
 ) {
     NavHost(
         navController = navController,

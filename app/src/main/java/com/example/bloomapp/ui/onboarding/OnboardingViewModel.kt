@@ -36,4 +36,5 @@ class OnboardingViewModel @Inject constructor(
             onComplete()
         }
     }
+
 }
