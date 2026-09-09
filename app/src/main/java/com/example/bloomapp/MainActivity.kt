@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
     @Inject
     lateinit var onboardingDataStore: OnboardingDataStore
 
-    @Inject
+    @Injectnb
     lateinit var adManager: AdManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
